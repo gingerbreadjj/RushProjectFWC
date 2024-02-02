@@ -1,0 +1,73 @@
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+}
+h4{
+    margin: 10px;
+    color: white;
+}
+h1{
+    color: white;
+}
+.box{
+    margin-top: 20px;
+}
+.buttonme{
+    border-radius: 50px;
+    margin: 10px;
+    background-color: rgb(235, 206, 163);
+    color: rgb(47, 92, 68);
+    font-size: 20px;
+}
+.buttonme:hover{
+    background-color: rgb(243, 132, 72);
+    color: white;
+}
+
+a{
+    color: transparent;
+}
+
+.vdo{
+    margin-bottom: 50px;
+}
+
+.film1{
+    width: 100%;
+    height: 60px;
+    background-color: rgb(51, 49, 46);
+    top: 0;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+}
+
+.film2{
+    width: 100%;
+    height: 60px;
+    background-color: rgb(51, 49, 46);
+    bottom: 0;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 960px) {
+    .film1{
+        background-color: black;
+    }
+    .film2{
+        background-color: black;
+    }
+}
+.filmdot{
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    background-color: rgb(255, 249, 238);
+    margin: 15px;
+}
