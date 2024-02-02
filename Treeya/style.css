@@ -4,8 +4,7 @@
     margin: 0;
     scroll-behavior: smooth;
 }
-section#food, section#contact, 
-section#sport, section#staff, section#ardi, section#home, section#profile, section#educa, section#act {
+section#contact, section#home, section#educa{
     width: 100%;
     height: 100vh;
     font-size: 20px;
@@ -15,6 +14,52 @@ section#sport, section#staff, section#ardi, section#home, section#profile, secti
     align-items: center;
     text-align: center;
     overflow: hidden;
+}
+
+section#profile{
+    width: 100%;
+    height: 100vh;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    background-color: #c7c7ba;
+}
+
+section#ardi{
+    width: 100%;
+    height: 100vh;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    background-color: #c7c7ba;
+}
+
+#imgcon {
+    position: relative;
+}
+
+.imgprofile {
+    height: 520px;
+    width: 370px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.8s ease;
+    border: 5px;
+}
+
+
+#img2 {
+    opacity: 0; /* ตั้งค่าความคมชัดให้เป็น 0 โดย default */
+    width: 350px;
 }
 
 .center {
@@ -72,7 +117,8 @@ nav {
 }
 
 .imgprofile {
-    width: 400px;
+    /* width: 400px; */
+    transform: translateX(-10,10);
 }
 
 .frameimg {
@@ -132,7 +178,7 @@ nav {
 }
 
 hr {
-    width: 600px;
+    width: 450px;
     background-color: #bcbcbc;
 }
 

@@ -4,10 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>64070151 Treeya</title>
-    <script src="script.js"></script>
+    <title>Treeya</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
     <link href="style.css" rel="stylesheet">
+
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
@@ -16,11 +21,11 @@
 </head>
 <body>
     <nav>
-        <a class="menu" href="#home">หน้าแรก</a>
-        <a class="menu" href="#profile">ข้อมูลส่วนตัว</a>
-        <a class="menu" href="#educa">การศึกษา</a>
-        <a class="menu" href="#ardi">งานอดิเรก</a>
-        <a class="menu" href="#contact">CONTACT</a>
+        <a class="menu" href="#home">Home</a>
+        <a class="menu" href="#profile">Profile</a>
+        <a class="menu" href="#educa">Skills</a>
+        <a class="menu" href="#ardi">Playist</a>
+        <a class="menu" href="#contact">contact</a>
     </nav>
 
     <section id="home">
@@ -39,22 +44,25 @@
 
     <section id="profile">
         <div class="row">
-            <div class="col">
-                <p class="namepro">นางสาว<br>ตรียา<br>เอื้อเจริญศรี</p>
+            <div class="col-4" style="margin-top: 420px;">
+                <p class="namepro">Treeya<br>Uacharoensri</p>
             </div>
-            <div class="col">
-                <div class="frameimg">
-                    <img class="imgprofile" style="height: 490px; width:375px" src="https://cdn.discordapp.com/attachments/860515428253564978/1202610978122895391/IMG_3649.jpg?ex=65ce15c0&is=65bba0c0&hm=89bf740cfd0d53e29246be7278df0a9fd5ccaf2e4d1d1b8ae46bc913abe9877a&">
-                </div>
-            </div>
-            <div class="col" style="display: flex; justify-content: center; align-items:center;">
+            <div class="col-4" style="display: flex; justify-content: center; align-items:center;">
                 <div class="datapro">
-                    <p>ชื่อเล่น : จิน</p>
-                    <p>อายุ : 20 ปี</p>
-                    <p>อาชีพ : นักศึกษา</p>
-                    <p>คณะ : คณะเทคโนโลยีสารสนเทศ</p>
+                    <p>Nickname : Jin</p>
+                    <p>Age : 20 years</p>
+                    <p>King Mongkut's Institute of Technology Ladkrabang</p>
+                    <p>Faculty of Information Technology</p>
                 </div>
             </div>
+            <div class="col" style="justify-content: center; margin-top: 50px">
+                <div id="imgcon">
+                <!-- <div class="">#delframing -->
+                    <img id="img1" class="imgprofile" style="height: 520px; width:370px" src="https://cdn.discordapp.com/attachments/860515428253564978/1202610978122895391/IMG_3649.jpg?ex=65ce15c0&is=65bba0c0&hm=89bf740cfd0d53e29246be7278df0a9fd5ccaf2e4d1d1b8ae46bc913abe9877a&">
+                    <img id="img2" class="imgprofile" style="height: 520px; width:370px" src="https://cdn.discordapp.com/attachments/860515428253564978/1202903184402812958/IMG_3651.jpg?ex=65cf25e4&is=65bcb0e4&hm=a8b9ded17dd33f05d00b3018a3d14b95c9d62a367bc1e80e478f0fadea7cad35&">
+                </div>
+            </div>
+            
         </div>
     </section>
 
@@ -64,49 +72,46 @@
                 <img class="imgedu" src="https://cdn.discordapp.com/attachments/860515428253564978/1202618917848088576/IMG_8023.jpg?ex=65ce1d25&is=65bba825&hm=f160295376fc3f7d82f07ffe8d0813cc2360659293cdc14bd058d54c90f5e7af&">
             </div>
             <div class="col dataedu">
-                <p class="bolder">2565-2564 มหาวิทยาลัย</p>
-                <p>
-                    สถาบันเทคโนโลยีพระจอมเกล้าคุณทหารลาดกระบัง<br>
-                    คณะเทคโนโลยีสารสนเทศ สาขาเทคโนโลยีสารสนเทศ
-                </p>
+                <p class="bolder">Programming Skills</p>
+                    <ul style="margin-left: 40px;">
+                        <li>Python</li>
+                        <li>HTML</li>
+                        <li>Java</li>
+                        <li>Javascript</li>
+                        <li>C++</li>
+                        <li>SQL</li>
+                    </ul>
                 <hr>
-                <p class="bolder">2563-2561 มัธยมศึกษาตอนปลาย</p>
-                <p>
-                    โรงเรียนศึกษานารี จ.กรุงเทพมหานคร <br>
-                    สายวิทย์-คณิต
-                </p>
+                <p class="bolder">Framework / Tools</p>
+                    <div class="row">
+                        <ul style="margin-left: 50px;">
+                            <li>React</li>
+                            <li>React Native</li>
+                            <li>Vue.js</li>
+                            <li>Tailwind CSS</li>
+                        </ul>
+                        <ul style="margin-left: 70px;">
+                            <li>Bootstrap</li>
+                            <li>NodeJs</li>
+                            <li>Firebase</li>
+                            <li>MongoDB</li>
+                        </ul>
+                    </div>
                 <hr>
-                <p class="bolder">2560-2558 มัธยมศึกษาตอนต้น</p>
-                <p>
-                    โรงเรียนศึกษานารี จ.กรุงเทพมหานคร <br>
-                    สายวิทย์-คณิต
-                </p>
-                <hr>
-                <p class="bolder">2557-2552 ประถมศึกษา</p>
-                <p>
-                    โรงเรียนแสงอรุณ จ.กรุงเทพมหานคร<br>
-                </p>
-                <hr>
-                <p class="bolder">2551-2549 อนุบาล</p>
-                <p>
-                    โรงเรียนวาสุเทวี จ.กรุงเทพมหานคร <br>
-                </p>
+                <p class="bolder">Soft Skills</p>
+                <ul style="margin-left: 40px;">
+                    <li>Collaboration</li>
+                    <li>Creativity</li>
+                    <li>Time Management</li>
+                    <li>Flexibility and Adaptability</li>
+                </ul>
             </div>
         </div>
     </section>
 
     <section id="ardi">
-        <div class="row">
-            <div class="col-4">
-                <div class="center">
-                    <h1>งานอดิเรก</h1>
-                    <br>
-                    <p>ฟังเพลง</p>
-                    <p class="addtxt">(กดที่รูปเพื่อฟังเพลง)</p>
-                    <p>ดูภาพยนตร์</p>
-                    <p>เล่นเกม</p>
-                </div>
-            </div>
+        <h1>My Playist</h1>
+        <div class="row" style="justify-content:center;">
             <div class="col-2">
                 <div class="music">
                     <a href="https://youtu.be/VINAMUO6Zbk?si=dNiwcVGFXXVc1xpJ">
