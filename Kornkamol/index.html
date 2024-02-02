@@ -15,12 +15,20 @@
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <nav class="nav">
+    <nav class="nav" id="nav">
         <div><a class="menu" href="#home" style="margin-right: 5vw; font-size: 30px;">KORNKAMOL</a></div>
         <div><a class="menu" href="#profile">Profile</a></div>
         <div><a class="menu" href="#educa">Skill</a></div>
         <div><a class="menu" href="#ardi">Hobby</a></div>
-        <div><a class="menu" href="#contact">Contact</a></div>  
+        <div><a class="menu" href="#contact">Contact</a></div>
+        <div class="menucol">
+            <p class="txtcol">my favorite color</p>
+            <div class="boxcol">
+                <button onclick="favcol1()" class="btncol1"></button>
+                <button onclick="favcol2()" class="btncol2"></button>
+                <button onclick="favcol3()" class="btncol3"></button>
+            </div>
+        </div>
     </nav>
 
     <section id="home">
@@ -43,7 +51,7 @@
                 <p class="namepro">Kornkamol<br>Witchuteerakul</p>
             </div>
             <div class="col">
-                <div class="frameimg">
+                <div class="frameimg" id="frameimg">
                     <img class="imgprofile" src="https://cdn.discordapp.com/attachments/890872328374849548/1202618321883635823/IMG_3194.jpg?ex=65ce1c97&is=65bba797&hm=6aef3976e53441711c51c464f4a8114118e8dadbff9fc0bf5fd2aaa9698b9133&">
                 </div>
             </div>
@@ -53,7 +61,7 @@
                     <p>20 years</p>
                     <p> </p>
                     <p>School of Information Technology</p>
-                    <p>At KMITL</p>
+                    <p>King Mongkut's Institute of<br>Technology Ladkrabang</p>
                 </div>
             </div>
         </div>
@@ -67,39 +75,59 @@
             <div class="col dataedu">
                 <p class="bolder">Skill</p>
                 <div style="display: flex; flex-direction: row;">
-                    <div>
-                        <p>
-                            HTML CSS<br>
-                            JavaScript<br>
-                            Python<br>
-                            SQL<br>
-                            Java<br>
-                        </p>
+                    <div style="margin-left: 50px;">
+                        <ul>
+                            <li>HTML CSS</li>
+                            <li>JavaScript</li>
+                            <li>Python</li>
+                            <li>SQL</li>
+                            <li>Java</li>
+                        </ul>
                     </div>
                     <div style="margin-left: 80px;">
-                        <p>
-                            React<br>
-                            React Native<br>
-                            Vue<br>
-                            Firebase<br>
-                            MongoDB
-                        </p>
+                        <ul>
+                            <li>React</li>
+                            <li>React Native</li>
+                            <li>Vue</li>
+                            <li>Firebase</li>
+                            <li>MongoDB</li>
+                        </ul>
+                    </div>
+                    <div style="margin-left: 80px;">
+                        <ul>
+                            <li>Node.js</li>
+                            <li>Express.js</li>
+                            <li>Next.js</li>
+                            <li>Tailwind CSS</li>
+                            <li>Bootstrap</li>
+                        </ul>
                     </div>
                 </div>
                 <hr>
                 <p class="bolder">SOFT SKILLS</p>
-                <p>Critical thinking<br>
-                    Flexibility<br>
-                    Communication<br>
-                    Organization<br>
-                    Problem solving
-                </p>
+                <div style="display: flex; flex-direction: row;">
+                    <div style="margin-left: 50px;">
+                        <ul>
+                            <li>Critical thinking</li>
+                            <li>Flexibility</li>
+                            <li>Communication</li>
+                        </ul>
+                    </div>
+                    <div style="margin-left: 80px;">
+                        <ul>
+                            <li>Organization</li>
+                            <li>Problem solving</li>
+                        </ul>
+                    </div>
+                </div>
                 <hr>
                 <p class="bolder">EXPERIENCE</p>
-                <p class="bolder">Dormitory rent</p>
-                <p>: A application for facilitate about rental for both landlords and occupants.</p>
-                <p class="bolder">Disro </p>
-                <p>: A website for show details about public transportation in KMITL area.</p>
+                <div style="margin-left: 30px;">
+                    <p class="bolder">Dormitory rent</p>
+                    <p>: A application for facilitate about rental for both landlords and occupants.</p>
+                    <p class="bolder">Disro </p>
+                    <p>: A website for show details about public transportation in KMITL area.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -117,13 +145,13 @@
                 </div>
             </div>
             <div class="col-2">
-                <div class="music">
+                <div class="music" id="music">
                     <a href="https://youtu.be/k04DFjFK3eo?si=QNSYqoC-KO02-rgg">
                         <img class="imgmusic" src="https://cdn.discordapp.com/attachments/890872328374849548/1202636098300420096/lan.jpg?ex=65ce2d25&is=65bbb825&hm=f2746e20788bf21355c1c36e4f892ce75c516373dbb4f4b2d32c43e2623416c4&">
                     </a>
                     <p>ยอม (White Flag)<br>LANDOKMAI</p>
                 </div>
-                <div class="music">
+                <div class="music" id="music2">
                     <a href="https://www.youtube.com/watch?v=sAt3rzacv7c">
                         <img class="imgmusic" src="https://cdn.discordapp.com/attachments/863119521807073280/1015611661018746970/LANDOKMAI_-_Tsuki.jpg">
                     </a>
@@ -131,13 +159,13 @@
                 </div>
             </div>
             <div class="col-2">
-                <div class="music">
+                <div class="music" id="music3">
                     <a href="https://youtu.be/cmVVkUvGIqg?si=5w2c_0Xf2Wtas6-o">
                         <img class="imgmusic" src="https://cdn.discordapp.com/attachments/890872328374849548/1202636098531102740/lan.jpeg?ex=65ce2d25&is=65bbb825&hm=6ce978fffed771e37929b6505042bc74011b524b4aed49a2a8a14e101af7f4d1&">
                     </a>
                     <p>Our Sunset<br>LANDOKMAI</p>
                 </div>
-                <div class="music">
+                <div class="music" id="music4">
                     <a href="https://youtu.be/ZJPKnf61eBI?si=BxzUhWyZ2ksWmum4">
                         <img class="imgmusic" src="https://cdn.discordapp.com/attachments/890872328374849548/1202636098011136031/lan.png?ex=65ce2d25&is=65bbb825&hm=fced9f80cf5f043501ce76984ada7fb4204137d2f81074e439dd4252db3e3832&">
                     </a>
@@ -145,13 +173,13 @@
                 </div>
             </div>
             <div class="col-2">
-                <div class="music">
+                <div class="music" id="music5">
                     <a href="https://youtu.be/1_gVpa0yb48?si=uAS-0FwG5s0_H_Uc">
                         <img class="imgmusic" src="https://cdn.discordapp.com/attachments/890872328374849548/1202636097239253022/lann.jpeg?ex=65ce2d25&is=65bbb825&hm=47903bfd109751d43a3472920d9e4303a4a426ac8630aaa90643618be85addbe&">
                     </a>
                     <p>Taxi<br>LANDOKMAI</p>
                 </div>
-                <div class="music">
+                <div class="music" id="music6">
                     <a href="https://youtu.be/fxgJ8j4nymY?si=PL3FEuBNqFCkdVgw">
                         <img class="imgmusic" src="https://cdn.discordapp.com/attachments/890872328374849548/1202636096928751696/lannn.jpeg?ex=65ce2d25&is=65bbb825&hm=d177d4adb5c366df5b53e331106b3acbd6660b4e9e2fa485e9d073eced568f9a&">
                     </a>
@@ -159,13 +187,13 @@
                 </div>
             </div>
             <div class="col-2">
-                <div class="music">
+                <div class="music" id="music7">
                     <a href="https://youtu.be/DDAnkPrqcgg?si=mkxcrH2qLP0jTCqh">
                         <img class="imgmusic" src="https://cdn.discordapp.com/attachments/890872328374849548/1202636097562083338/lan2.jpg?ex=65ce2d25&is=65bbb825&hm=56adcb5678f437eb24a330852f2c044132f20f6e9e35d01ff35cad865a491860&">
                     </a>
                     <p>B-D-BUB-BA<br>LANDOKMAI</p>
                 </div>
-                <div class="music">
+                <div class="music" id="music8">
                     <a href="https://youtu.be/ZgDvWtC__Xw?si=1jfbWi3aeMoKTW5r">
                         <img class="imgmusic" src="https://cdn.discordapp.com/attachments/890872328374849548/1202636098531102740/lan.jpeg?ex=65ce2d25&is=65bbb825&hm=6ce978fffed771e37929b6505042bc74011b524b4aed49a2a8a14e101af7f4d1&">
                     </a>

@@ -91,6 +91,12 @@ section#contact, section#ardi, section#home, section#profile, section#educa {
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 5px;
+    transition: all 0.125s;
+}
+
+.frameimg:hover {
+    box-shadow: 5px 5px 5px #bababa;
+    margin-top: -1px;
 }
 
 .namepro {
@@ -114,7 +120,7 @@ section#contact, section#ardi, section#home, section#profile, section#educa {
 
 @keyframes changecolor {
     0% {color: #000;}
-    50% {color: #929292;}
+    50% {color: transparent;}
     100% {color: #000;}
 }
 
@@ -176,4 +182,48 @@ hr {
 .icon {
     width: 30px;
     height: 50px;
+}
+
+.txtcol{
+    font-size: 16px;
+}
+
+.boxcol{
+    margin-top: -20px;
+}
+
+.btncol1{
+    width: 1rem;
+    height: 1rem;
+    border-radius: 360px;
+    background-color: white;
+    border: solid 1px #000;
+    margin: 5px;
+}
+
+.btncol2{
+    width: 1rem;
+    height: 1rem;
+    border-radius: 360px;
+    background-color: rgb(191, 224, 255);
+    border: solid 1px #000;
+    margin: 5px;
+}
+
+.btncol3{
+    width: 1rem;
+    height: 1rem;
+    border-radius: 360px;
+    background-color: rgb(236, 217, 255);
+    border: solid 1px #000;
+    margin: 5px;
+}
+
+.menucol {
+    color: #000;
+    margin-left: 108px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
